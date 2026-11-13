@@ -504,6 +504,12 @@ def cargar_predicciones(pred_dir, month, patron="*"):
 
 
 def hiperparametros_baseline():
-    """Los mejores hiperparámetros de la bayesiana del baseline (y sus iteraciones con early stopping)."""
-    folder = EXP_ROOT / "baseline" / ("prueba" if MODO_PRUEBA else "") / "bayesiana"
-    return json.loads((folder / "mejores_hiperparametros.json").read_text(encoding="utf-8"))
+    """Los mejores hiperparámetros de la bayesiana del baseline (y sus iteraciones con early stopping).
+
+    Por defecto lee los registrados en el repo (resultados/baseline/mejores_hiperparametros.json), así todos
+    los experimentos usan exactamente los mismos. En modo prueba lee los de la corrida de prueba del baseline.
+    """
+    registrados = _HERE / "resultados" / "baseline" / "mejores_hiperparametros.json"
+    if MODO_PRUEBA or not registrados.exists():
+        registrados = EXP_ROOT / "baseline" / ("prueba" if MODO_PRUEBA else "") / "bayesiana" / "mejores_hiperparametros.json"
+    return json.loads(registrados.read_text(encoding="utf-8"))

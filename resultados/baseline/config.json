@@ -1,0 +1,86 @@
+{
+  "train": [
+    201903,
+    201904,
+    201905,
+    201906
+  ],
+  "valid": 201908,
+  "test": 201910,
+  "pred_months": [
+    201907,
+    201908,
+    201909,
+    201910
+  ],
+  "lags": [
+    1,
+    2
+  ],
+  "fijos": {
+    "objective": "binary",
+    "metric": "auc",
+    "first_metric_only": true,
+    "boosting": "gbdt",
+    "bagging_freq": 1,
+    "max_depth": -1,
+    "min_gain_to_split": 0.0,
+    "min_sum_hessian_in_leaf": 0.001,
+    "lambda_l1": 0.0,
+    "lambda_l2": 0.0,
+    "max_bin": 31,
+    "feature_pre_filter": false,
+    "force_col_wise": true,
+    "verbose": -1
+  },
+  "search_space": {
+    "num_leaves": [
+      8,
+      2048,
+      true
+    ],
+    "learning_rate": [
+      0.01,
+      0.2,
+      true
+    ],
+    "min_data_in_leaf": [
+      10,
+      10000,
+      true
+    ],
+    "feature_fraction": [
+      0.1,
+      1.0,
+      false
+    ],
+    "bagging_fraction": [
+      0.2,
+      1.0,
+      false
+    ]
+  },
+  "n_trials": 50,
+  "n_startup": 15,
+  "max_rounds": 5000,
+  "bo_seed": 101737,
+  "top_k": 5,
+  "seeds": [
+    101737,
+    303011,
+    602909,
+    707717,
+    906007,
+    568318,
+    641463,
+    591763,
+    616818,
+    193376
+  ],
+  "gain": [
+    1.0725,
+    -0.0275
+  ],
+  "gain_window": 501,
+  "prueba": false
+}
