@@ -1,0 +1,97 @@
+2026-11-12 23:53:05  ======================================================================
+2026-11-12 23:53:05  baseline | prueba: False | Google Cloud: False | hilos: 4 | lightgbm 4.7.0 | optuna 5.0.0
+2026-11-12 23:53:05  Resultados: /home/user/corrida_baseline/baseline | temporales: /tmp/claude-0/out/_local/baseline
+2026-11-12 23:53:05  Variables ya armadas: /tmp/claude-0/out/_local/variables/dataset_fe_1145c0b44dcfa8d0.parquet
+2026-11-12 23:53:51  Entrenamiento [201903, 201904, 201905, 201906]: 506,871 filas, 5,313 positivos | 760 variables
+2026-11-12 23:53:51    201907: 129,853 filas {'CONTINUA': 128602, 'BAJA+2': 656, 'BAJA+1': 595}
+2026-11-12 23:53:51    201908: 131,775 filas {'CONTINUA': 130573, 'BAJA+1': 659, 'BAJA+2': 543}
+2026-11-12 23:53:51    201909: 133,419 filas {'CONTINUA': 132256, 'BAJA+2': 615, 'BAJA+1': 548}
+2026-11-12 23:53:51    201910: 135,633 filas {'CONTINUA': 134380, 'BAJA+2': 632, 'BAJA+1': 621}
+2026-11-12 23:53:52  Bayesiana: faltan 50 de 50 corridas
+2026-11-12 23:56:29    corrida   1/50 | num_leaves 9 learning_rate 0.01249 min_data_in_leaf 32 feature_fraction 0.5074 bagging_fraction 0.2039 -> AUC 201908 0.92547 | 876 iter | 2.6 min
+2026-11-13 00:00:12    corrida   2/50 | num_leaves 1952 learning_rate 0.02168 min_data_in_leaf 651 feature_fraction 0.5955 bagging_fraction 0.8748 -> AUC 201908 0.93034 | 211 iter | 3.7 min
+2026-11-13 00:00:31    corrida   3/50 | num_leaves 73 learning_rate 0.1361 min_data_in_leaf 27 feature_fraction 0.3038 bagging_fraction 0.6016 -> AUC 201908 0.90549 | 48 iter | 0.3 min
+2026-11-13 00:03:56    corrida   4/50 | num_leaves 889 learning_rate 0.03318 min_data_in_leaf 70 feature_fraction 0.3504 bagging_fraction 0.9462 -> AUC 201908 0.92732 | 307 iter | 3.4 min
+2026-11-13 00:04:51    corrida   5/50 | num_leaves 33 learning_rate 0.02661 min_data_in_leaf 167 feature_fraction 0.2856 bagging_fraction 0.6027 -> AUC 201908 0.92819 | 196 iter | 0.9 min
+2026-11-13 00:09:08    corrida   6/50 | num_leaves 249 learning_rate 0.01306 min_data_in_leaf 2604 feature_fraction 0.7537 bagging_fraction 0.7007 -> AUC 201908 0.93221 | 592 iter | 4.3 min
+2026-11-13 00:10:16    corrida   7/50 | num_leaves 255 learning_rate 0.02702 min_data_in_leaf 1091 feature_fraction 0.2206 bagging_fraction 0.3591 -> AUC 201908 0.93021 | 206 iter | 1.1 min
+2026-11-13 00:14:48    corrida   8/50 | num_leaves 1109 learning_rate 0.02668 min_data_in_leaf 328 feature_fraction 0.926 bagging_fraction 0.7018 -> AUC 201908 0.92745 | 192 iter | 4.5 min
+2026-11-13 00:15:20    corrida   9/50 | num_leaves 25 learning_rate 0.07449 min_data_in_leaf 347 feature_fraction 0.4295 bagging_fraction 0.7586 -> AUC 201908 0.92547 | 86 iter | 0.5 min
+2026-11-13 00:16:15    corrida  10/50 | num_leaves 199 learning_rate 0.1102 min_data_in_leaf 12 feature_fraction 0.8932 bagging_fraction 0.6993 -> AUC 201908 0.91018 | 103 iter | 0.9 min
+2026-11-13 00:16:45    corrida  11/50 | num_leaves 9 learning_rate 0.0667 min_data_in_leaf 138 feature_fraction 0.6158 bagging_fraction 0.8928 -> AUC 201908 0.92527 | 139 iter | 0.5 min
+2026-11-13 00:21:37    corrida  12/50 | num_leaves 15 learning_rate 0.01296 min_data_in_leaf 4820 feature_fraction 0.3102 bagging_fraction 0.9394 -> AUC 201908 0.92914 | 1639 iter | 4.9 min
+2026-11-13 00:23:09    corrida  13/50 | num_leaves 11 learning_rate 0.02671 min_data_in_leaf 16 feature_fraction 0.314 bagging_fraction 0.4268 -> AUC 201908 0.92445 | 602 iter | 1.5 min
+2026-11-13 00:24:15    corrida  14/50 | num_leaves 42 learning_rate 0.06508 min_data_in_leaf 7597 feature_fraction 0.2392 bagging_fraction 0.441 -> AUC 201908 0.92460 | 426 iter | 1.1 min
+2026-11-13 00:25:20    corrida  15/50 | num_leaves 659 learning_rate 0.03229 min_data_in_leaf 2858 feature_fraction 0.6496 bagging_fraction 0.2666 -> AUC 201908 0.92895 | 487 iter | 1.1 min
+2026-11-13 00:28:08    corrida  16/50 | num_leaves 780 learning_rate 0.03005 min_data_in_leaf 489 feature_fraction 0.6564 bagging_fraction 0.8541 -> AUC 201908 0.92807 | 154 iter | 2.8 min
+2026-11-13 00:30:55    corrida  17/50 | num_leaves 57 learning_rate 0.01557 min_data_in_leaf 2300 feature_fraction 0.7313 bagging_fraction 0.6998 -> AUC 201908 0.93054 | 590 iter | 2.8 min
+2026-11-13 00:34:05    corrida  18/50 | num_leaves 134 learning_rate 0.01756 min_data_in_leaf 3413 feature_fraction 0.7902 bagging_fraction 0.7551 -> AUC 201908 0.93176 | 506 iter | 3.2 min
+2026-11-13 00:36:58    corrida  19/50 | num_leaves 240 learning_rate 0.0169 min_data_in_leaf 3531 feature_fraction 0.7022 bagging_fraction 0.8049 -> AUC 201908 0.93179 | 439 iter | 2.9 min
+2026-11-13 00:41:26    corrida  20/50 | num_leaves 1224 learning_rate 0.01129 min_data_in_leaf 1462 feature_fraction 0.7071 bagging_fraction 0.6476 -> AUC 201908 0.93204 | 529 iter | 4.5 min
+2026-11-13 00:45:22  ======================================================================
+2026-11-13 00:45:22  baseline | prueba: False | Google Cloud: False | hilos: 4 | lightgbm 4.7.0 | optuna 5.0.0
+2026-11-13 00:45:22  Resultados: /home/user/corrida_baseline/baseline | temporales: /tmp/claude-0/out/_local/baseline
+2026-11-13 00:45:22  Variables ya armadas: /tmp/claude-0/out/_local/variables/dataset_fe_1145c0b44dcfa8d0.parquet
+2026-11-13 00:46:10  Entrenamiento [201903, 201904, 201905, 201906]: 506,871 filas, 5,313 positivos | 760 variables
+2026-11-13 00:46:10    201907: 129,853 filas {'CONTINUA': 128602, 'BAJA+2': 656, 'BAJA+1': 595}
+2026-11-13 00:46:10    201908: 131,775 filas {'CONTINUA': 130573, 'BAJA+1': 659, 'BAJA+2': 543}
+2026-11-13 00:46:10    201909: 133,419 filas {'CONTINUA': 132256, 'BAJA+2': 615, 'BAJA+1': 548}
+2026-11-13 00:46:10    201910: 135,633 filas {'CONTINUA': 134380, 'BAJA+2': 632, 'BAJA+1': 621}
+2026-11-13 00:46:12  Bayesiana: faltan 30 de 50 corridas
+2026-11-13 00:51:58    corrida  21/50 | num_leaves 660 learning_rate 0.01037 min_data_in_leaf 461 feature_fraction 0.8092 bagging_fraction 0.6213 -> AUC 201908 0.93033 | 349 iter | 5.8 min
+2026-11-13 00:56:03    corrida  22/50 | num_leaves 1998 learning_rate 0.01173 min_data_in_leaf 2663 feature_fraction 0.7173 bagging_fraction 0.6123 -> AUC 201908 0.93230 | 762 iter | 4.1 min
+2026-11-13 00:59:27    corrida  23/50 | num_leaves 2017 learning_rate 0.01589 min_data_in_leaf 808 feature_fraction 0.7726 bagging_fraction 0.5802 -> AUC 201908 0.93138 | 337 iter | 3.4 min
+2026-11-13 01:03:51    corrida  24/50 | num_leaves 1145 learning_rate 0.01115 min_data_in_leaf 3006 feature_fraction 0.7463 bagging_fraction 0.4893 -> AUC 201908 0.93140 | 1197 iter | 4.4 min
+2026-11-13 01:07:49    corrida  25/50 | num_leaves 1053 learning_rate 0.01496 min_data_in_leaf 2769 feature_fraction 0.9162 bagging_fraction 0.6826 -> AUC 201908 0.93144 | 585 iter | 4.0 min
+2026-11-13 01:13:08    corrida  26/50 | num_leaves 1129 learning_rate 0.01309 min_data_in_leaf 3809 feature_fraction 0.558 bagging_fraction 0.4353 -> AUC 201908 0.93033 | 1131 iter | 5.3 min
+2026-11-13 01:15:31    corrida  27/50 | num_leaves 1695 learning_rate 0.01893 min_data_in_leaf 1716 feature_fraction 0.619 bagging_fraction 0.7475 -> AUC 201908 0.93141 | 254 iter | 2.4 min
+2026-11-13 01:17:16    corrida  28/50 | num_leaves 370 learning_rate 0.02608 min_data_in_leaf 3388 feature_fraction 0.7794 bagging_fraction 0.6369 -> AUC 201908 0.93140 | 317 iter | 1.7 min
+2026-11-13 01:19:14    corrida  29/50 | num_leaves 1117 learning_rate 0.02392 min_data_in_leaf 1273 feature_fraction 0.726 bagging_fraction 0.6274 -> AUC 201908 0.93183 | 215 iter | 2.0 min
+2026-11-13 01:23:52    corrida  30/50 | num_leaves 1622 learning_rate 0.01072 min_data_in_leaf 9642 feature_fraction 0.6828 bagging_fraction 0.545 -> AUC 201908 0.92800 | 1794 iter | 4.6 min
+2026-11-13 01:27:50    corrida  31/50 | num_leaves 815 learning_rate 0.01358 min_data_in_leaf 1191 feature_fraction 0.7978 bagging_fraction 0.8259 -> AUC 201908 0.93076 | 280 iter | 4.0 min
+2026-11-13 01:33:21    corrida  32/50 | num_leaves 1316 learning_rate 0.0117 min_data_in_leaf 376 feature_fraction 0.612 bagging_fraction 0.5086 -> AUC 201908 0.93127 | 481 iter | 5.5 min
+2026-11-13 01:37:56    corrida  33/50 | num_leaves 1388 learning_rate 0.01125 min_data_in_leaf 1436 feature_fraction 0.7323 bagging_fraction 0.7604 -> AUC 201908 0.93249 | 487 iter | 4.6 min
+2026-11-13 01:40:41    corrida  34/50 | num_leaves 1355 learning_rate 0.01496 min_data_in_leaf 3201 feature_fraction 0.7007 bagging_fraction 0.6515 -> AUC 201908 0.93170 | 524 iter | 2.7 min
+2026-11-13 01:45:25    corrida  35/50 | num_leaves 1860 learning_rate 0.0116 min_data_in_leaf 1281 feature_fraction 0.8568 bagging_fraction 0.6465 -> AUC 201908 0.93202 | 518 iter | 4.7 min
+2026-11-13 01:48:03    corrida  36/50 | num_leaves 648 learning_rate 0.01532 min_data_in_leaf 1782 feature_fraction 0.76 bagging_fraction 0.5727 -> AUC 201908 0.93149 | 350 iter | 2.6 min
+2026-11-13 01:52:44    corrida  37/50 | num_leaves 153 learning_rate 0.01042 min_data_in_leaf 4731 feature_fraction 0.7338 bagging_fraction 0.6524 -> AUC 201908 0.93044 | 1092 iter | 4.7 min
+2026-11-13 01:56:35    corrida  38/50 | num_leaves 627 learning_rate 0.01234 min_data_in_leaf 1775 feature_fraction 0.6653 bagging_fraction 0.6976 -> AUC 201908 0.93220 | 535 iter | 3.8 min
+2026-11-13 01:59:22    corrida  39/50 | num_leaves 1627 learning_rate 0.01561 min_data_in_leaf 1497 feature_fraction 0.6422 bagging_fraction 0.4843 -> AUC 201908 0.93229 | 532 iter | 2.8 min
+2026-11-13 02:01:53    corrida  40/50 | num_leaves 711 learning_rate 0.02143 min_data_in_leaf 1566 feature_fraction 0.7169 bagging_fraction 0.7572 -> AUC 201908 0.93168 | 257 iter | 2.5 min
+2026-11-13 02:05:49    corrida  41/50 | num_leaves 1668 learning_rate 0.01299 min_data_in_leaf 1772 feature_fraction 0.5674 bagging_fraction 0.4959 -> AUC 201908 0.93167 | 495 iter | 3.9 min
+2026-11-13 02:09:32    corrida  42/50 | num_leaves 1439 learning_rate 0.01229 min_data_in_leaf 3794 feature_fraction 0.7277 bagging_fraction 0.756 -> AUC 201908 0.93114 | 594 iter | 3.7 min
+2026-11-13 02:14:50    corrida  43/50 | num_leaves 1898 learning_rate 0.01082 min_data_in_leaf 3763 feature_fraction 0.8471 bagging_fraction 0.8259 -> AUC 201908 0.93207 | 711 iter | 5.3 min
+2026-11-13 02:19:11    corrida  44/50 | num_leaves 1137 learning_rate 0.01337 min_data_in_leaf 1277 feature_fraction 0.6227 bagging_fraction 0.8387 -> AUC 201908 0.93157 | 409 iter | 4.3 min
+2026-11-13 02:22:33    corrida  45/50 | num_leaves 1997 learning_rate 0.0167 min_data_in_leaf 1058 feature_fraction 0.7276 bagging_fraction 0.776 -> AUC 201908 0.93187 | 276 iter | 3.4 min
+2026-11-13 02:26:15    corrida  46/50 | num_leaves 645 learning_rate 0.01573 min_data_in_leaf 3559 feature_fraction 0.6224 bagging_fraction 0.6975 -> AUC 201908 0.93112 | 744 iter | 3.7 min
+2026-11-13 02:30:31    corrida  47/50 | num_leaves 583 learning_rate 0.01167 min_data_in_leaf 1891 feature_fraction 0.6073 bagging_fraction 0.6609 -> AUC 201908 0.93146 | 532 iter | 4.3 min
+2026-11-13 02:35:36    corrida  48/50 | num_leaves 545 learning_rate 0.01047 min_data_in_leaf 2474 feature_fraction 0.7568 bagging_fraction 0.6298 -> AUC 201908 0.93293 | 852 iter | 5.1 min
+2026-11-13 02:39:37    corrida  49/50 | num_leaves 1709 learning_rate 0.01407 min_data_in_leaf 4793 feature_fraction 0.807 bagging_fraction 0.705 -> AUC 201908 0.93106 | 797 iter | 4.0 min
+2026-11-13 02:45:23  ======================================================================
+2026-11-13 02:45:23  baseline | prueba: False | Google Cloud: False | hilos: 4 | lightgbm 4.7.0 | optuna 5.0.0
+2026-11-13 02:45:23  Resultados: /home/user/corrida_baseline/baseline | temporales: /tmp/claude-0/out/_local/baseline
+2026-11-13 02:45:23  Variables ya armadas: /tmp/claude-0/out/_local/variables/dataset_fe_1145c0b44dcfa8d0.parquet
+2026-11-13 02:45:49  Entrenamiento [201903, 201904, 201905, 201906]: 506,871 filas, 5,313 positivos | 760 variables
+2026-11-13 02:45:49    201907: 129,853 filas {'CONTINUA': 128602, 'BAJA+2': 656, 'BAJA+1': 595}
+2026-11-13 02:45:49    201908: 131,775 filas {'CONTINUA': 130573, 'BAJA+1': 659, 'BAJA+2': 543}
+2026-11-13 02:45:49    201909: 133,419 filas {'CONTINUA': 132256, 'BAJA+2': 615, 'BAJA+1': 548}
+2026-11-13 02:45:49    201910: 135,633 filas {'CONTINUA': 134380, 'BAJA+2': 632, 'BAJA+1': 621}
+2026-11-13 02:45:49  Bayesiana: faltan 1 de 50 corridas
+2026-11-13 02:48:28    corrida  50/50 | num_leaves 1595 learning_rate 0.01489 min_data_in_leaf 1668 feature_fraction 0.7233 bagging_fraction 0.4574 -> AUC 201908 0.93216 | 528 iter | 2.7 min
+2026-11-13 02:48:29  Mejor corrida: 48 | AUC 201908 0.93293 | {'num_leaves': 545, 'learning_rate': 0.010473882804937966, 'min_data_in_leaf': 2474, 'feature_fraction': 0.7567603174345078, 'bagging_fraction': 0.6298115793636012} | 852 iter
+2026-11-13 02:48:29  Semillas: 5 configuraciones x 10 semillas, faltan 45 modelos
+2026-11-13 02:51:33    semilla 1/45: corrida 48 semilla 303011 | 852 iter | 3.1 min
+2026-11-13 02:54:33    semilla 2/45: corrida 48 semilla 602909 | 852 iter | 3.0 min
+2026-11-13 02:57:40    semilla 3/45: corrida 48 semilla 707717 | 852 iter | 3.1 min
+2026-11-13 03:00:59    semilla 4/45: corrida 48 semilla 906007 | 852 iter | 3.3 min
+2026-11-13 03:04:07    semilla 5/45: corrida 48 semilla 568318 | 852 iter | 3.1 min
+2026-11-13 03:07:17    semilla 6/45: corrida 48 semilla 641463 | 852 iter | 3.2 min
+2026-11-13 03:10:29    semilla 7/45: corrida 48 semilla 591763 | 852 iter | 3.2 min
+2026-11-13 03:13:36    semilla 8/45: corrida 48 semilla 616818 | 852 iter | 3.1 min
+2026-11-13 03:16:38    semilla 9/45: corrida 48 semilla 193376 | 852 iter | 3.0 min
+2026-11-13 03:19:08    semilla 10/45: corrida 33 semilla 303011 | 487 iter | 2.5 min
+2026-11-13 03:19:08  Encontré PARAR: no sigo con las semillas.
+2026-11-13 03:19:18  ======================================================================
+2026-11-13 03:19:18  BASELINE (bo048_s101737): AUC 201908 0.93293 | AUC 201910 0.93440 | corte (elegido en 201908) 4,322 | ganancia 201910 280.4
+2026-11-13 03:19:18  Semillas del mejor (10): ganancia 201910 media 278.9 | desvío 2.9 | min 271.8 | max 282.8
+2026-11-13 03:19:18  Resultados en /home/user/corrida_baseline/baseline/resultados

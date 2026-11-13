@@ -12,7 +12,10 @@ Este repo tiene, por ahora, el **baseline** y el **código común** que van a us
 comun.py                datos, entrenamiento sobre subconjuntos de filas o columnas, métricas, guardado
 01_baseline/
   baseline.py           el baseline de la cátedra: bayesiana, semillas, predicciones y evaluación
+resultados/baseline/    los resultados registrados del baseline: ganancia a superar e hiperparámetros
 ```
+
+**Baseline (corrida completa del 13/11):** ganancia en 201910 de **280,4 millones** con 4.322 envíos. Entre 10 semillas del mismo modelo, la ganancia media es 278,9 con un desvío de 2,9. El detalle y los hiperparámetros están en [`resultados/baseline/`](resultados/baseline/README.md).
 
 ## El baseline
 
@@ -107,7 +110,7 @@ from comun import Datos, Experimento, armar_variables, hiperparametros_baseline,
 
 exp = Experimento("ens3_variables")                   # carpeta exp/ens3_variables con su log y predicciones
 datos = Datos(armar_variables(exp.log), exp.log)      # reutiliza el parquet de variables si ya existe
-hp = hiperparametros_baseline()                       # los de la bayesiana del baseline
+hp = hiperparametros_baseline()                       # los registrados en resultados/baseline/
 valores = {**hp["valores"], "feature_fraction": 1.0} # paso 1 del ensamble 3 (ver abajo)
 
 columnas = datos.columnas_al_azar(0.25, seed=1)       # 25 % de las variables originales, con sus lags y deltas
