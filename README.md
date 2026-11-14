@@ -6,12 +6,14 @@ Hipótesis general: ensamblar varios LightGBM mejora la ganancia del baseline de
 2. **Undersampling de CONTINUA:** de 10 a 20 modelos, cada uno con el 100 % de los positivos y una muestra distinta de CONTINUA (1:5, 1:10, 1:20).
 3. **Undersampling de variables:** de 10 a 20 modelos (o más), cada uno con un subconjunto distinto de columnas (25 %, 50 %, 75 %).
 
-Este repo tiene, por ahora, el **baseline** y el **código común** que van a usar los tres ensambles. Los ensambles todavía no están implementados.
+Este repo tiene el **baseline**, el **código común** que usan los tres ensambles y el **ensamble 3** (undersampling de variables). Los ensambles 1 y 2 todavía no están implementados.
 
 ```
 comun.py                datos, entrenamiento sobre subconjuntos de filas o columnas, métricas, guardado
 01_baseline/
   baseline.py           el baseline de la cátedra: bayesiana, semillas, predicciones y evaluación
+04_ensamble3_variables/
+  ens3_variables.py     ensamble 3: bolsas de modelos con subconjuntos de variables contra semilleros pareados
 resultados/baseline/    los resultados registrados del baseline: ganancia a superar e hiperparámetros
 ```
 
@@ -122,6 +124,8 @@ datos.predecir_y_guardar(booster, exp.pred_dir, "m001", booster.best_iteration)
 `entrenar` acepta `filas`, `columnas`, las dos o ninguna. Con `early_stopping=True` cada modelo elige sus iteraciones con el AUC de 201908.
 
 ### Ensamble 3 (undersampling de variables): qué se compara
+
+Implementado en [`04_ensamble3_variables/`](04_ensamble3_variables/README.md), que tiene el diseño completo y cómo retomar la corrida si se corta.
 
 La pregunta es si sortear columnas por modelo aporta algo más allá de la aleatoriedad que LightGBM ya tiene con `feature_fraction`. Se responde en dos pasos:
 
