@@ -498,9 +498,12 @@ def cargar_predicciones(pred_dir, month, patron="*"):
     """DataFrame con numero_de_cliente, foto_mes, clase_ternaria y una columna por modelo guardado."""
     folder = Path(pred_dir) / str(month)
     table = pd.read_parquet(folder / "_ids.parquet")
-    for path in sorted(folder.glob(f"{patron}.npy")):
-        table[path.stem] = np.load(path)
-    return table
+    paths = sorted(folder.glob(f"{patron}.npy"))
+    if not paths:
+        return table
+    # Todas las columnas de una vez: agregarlas de a una fragmenta el DataFrame y pandas avisa por cada modelo.
+    preds = pd.DataFrame({path.stem: np.load(path) for path in paths}, index=table.index)
+    return pd.concat([table, preds], axis=1)
 
 
 def hiperparametros_baseline():
