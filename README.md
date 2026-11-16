@@ -15,6 +15,7 @@ comun.py                datos, entrenamiento sobre subconjuntos de filas o colum
 04_ensamble3_variables/
   ens3_variables.py     ensamble 3: bolsas de modelos con subconjuntos de variables contra semilleros pareados
 resultados/baseline/    los resultados registrados del baseline: ganancia a superar e hiperparámetros
+resultados/ens3_variables/  los resultados del ensamble 3
 ```
 
 **Baseline (corrida completa del 13/11):** ganancia en 201910 de **280,4 millones** con 4.322 envíos. Entre 10 semillas del mismo modelo, la ganancia media es 278,9 con un desvío de 2,9. El detalle y los hiperparámetros están en [`resultados/baseline/`](resultados/baseline/README.md).
@@ -125,7 +126,7 @@ datos.predecir_y_guardar(booster, exp.pred_dir, "m001", booster.best_iteration)
 
 ### Ensamble 3 (undersampling de variables): qué se compara
 
-Implementado en [`04_ensamble3_variables/`](04_ensamble3_variables/README.md), que tiene el diseño completo y cómo retomar la corrida si se corta.
+Implementado en [`04_ensamble3_variables/`](04_ensamble3_variables/README.md), que tiene el diseño completo y cómo retomar la corrida si se corta. Los resultados están en [`resultados/ens3_variables/`](resultados/ens3_variables/README.md): el 75 % le gana al semillero con la regla de la consigna, pero por el corte elegido en 201908 y no porque ordene mejor.
 
 La pregunta es si sortear columnas por modelo aporta algo más allá de la aleatoriedad que LightGBM ya tiene con `feature_fraction`. Se responde en dos pasos:
 

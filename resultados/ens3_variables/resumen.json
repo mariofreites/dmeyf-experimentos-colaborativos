@@ -1,0 +1,111 @@
+{
+  "modelos_por_bolsa": {
+    "S-1": 50,
+    "S-ff": 50,
+    "V25-1": 50,
+    "V25-ff": 50,
+    "V50-1": 50,
+    "V50-ff": 50,
+    "V75-1": 50,
+    "V75-ff": 50
+  },
+  "n_modelos_objetivo": 50,
+  "k_principal": 10,
+  "corte_fijo": 4322,
+  "correlacion_media_entre_modelos": {
+    "S-1": 0.9964666072250645,
+    "S-ff": 0.9959461249040162,
+    "V25-1": 0.8289985307602697,
+    "V25-ff": 0.8317268108400337,
+    "V50-1": 0.9091855436623595,
+    "V50-ff": 0.9114561283410553,
+    "V75-1": 0.9594063070166202,
+    "V75-ff": 0.9608871533463939
+  },
+  "comparacion_principal": [
+    {
+      "paso": 1,
+      "tecnica": "V25-1",
+      "semillero": "S-1",
+      "k": 10,
+      "metrica": "ganancia_201910",
+      "pares": 5,
+      "ganados": 1,
+      "diferencia_media": -6.985,
+      "diferencia_min": -12.6775,
+      "diferencia_max": 0.6875,
+      "p_signo": 0.96875,
+      "veredicto": "empeora o no aporta"
+    },
+    {
+      "paso": 1,
+      "tecnica": "V50-1",
+      "semillero": "S-1",
+      "k": 10,
+      "metrica": "ganancia_201910",
+      "pares": 5,
+      "ganados": 5,
+      "diferencia_media": 5.379,
+      "diferencia_min": 1.7875,
+      "diferencia_max": 9.46,
+      "p_signo": 0.03125,
+      "veredicto": "mejora"
+    },
+    {
+      "paso": 1,
+      "tecnica": "V75-1",
+      "semillero": "S-1",
+      "k": 10,
+      "metrica": "ganancia_201910",
+      "pares": 5,
+      "ganados": 5,
+      "diferencia_media": 6.666,
+      "diferencia_min": 1.4575,
+      "diferencia_max": 9.075,
+      "p_signo": 0.03125,
+      "veredicto": "mejora"
+    },
+    {
+      "paso": 2,
+      "tecnica": "V25-ff",
+      "semillero": "S-ff",
+      "k": 10,
+      "metrica": "ganancia_201910",
+      "pares": 5,
+      "ganados": 1,
+      "diferencia_media": -6.8585,
+      "diferencia_min": -18.2325,
+      "diferencia_max": 9.8175,
+      "p_signo": 0.96875,
+      "veredicto": "empeora o no aporta"
+    },
+    {
+      "paso": 2,
+      "tecnica": "V50-ff",
+      "semillero": "S-ff",
+      "k": 10,
+      "metrica": "ganancia_201910",
+      "pares": 5,
+      "ganados": 4,
+      "diferencia_media": 3.6355,
+      "diferencia_min": -2.0075,
+      "diferencia_max": 9.2675,
+      "p_signo": 0.1875,
+      "veredicto": "indicio de mejora, no concluyente"
+    },
+    {
+      "paso": 2,
+      "tecnica": "V75-ff",
+      "semillero": "S-ff",
+      "k": 10,
+      "metrica": "ganancia_201910",
+      "pares": 5,
+      "ganados": 5,
+      "diferencia_media": 8.2555,
+      "diferencia_min": 5.9675,
+      "diferencia_max": 11.9625,
+      "p_signo": 0.03125,
+      "veredicto": "mejora"
+    }
+  ]
+}
